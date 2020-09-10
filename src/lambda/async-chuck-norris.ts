@@ -1,6 +1,9 @@
 // example of async handler using async-await
 // https://github.com/netlify/netlify-lambda/issues/43#issuecomment-444618311
 
+/*
+Testing W/O Node Fetch
+
 import fetch from 'node-fetch';
 import { Context } from 'aws-lambda';
 export async function handler(event: any, context: Context) {
@@ -24,3 +27,4 @@ export async function handler(event: any, context: Context) {
     };
   }
 }
+*/
