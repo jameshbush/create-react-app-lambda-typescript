@@ -11,8 +11,8 @@ Testing W/O Node Fetch:
 */
 
 import fetch from 'node-fetch';
-/*
 import { Context } from 'aws-lambda';
+/*
 export async function handler(event: any, context: Context) {
   try {
     const response = await fetch('https://api.chucknorris.io/jokes/random');
