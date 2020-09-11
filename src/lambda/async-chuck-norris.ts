@@ -13,7 +13,6 @@ Testing W/O Node Fetch:
 import fetch from 'node-fetch';
 import { Context } from 'aws-lambda';
 export async function handler(event: any, context: Context) {
-  /*
   try {
     const response = await fetch('https://api.chucknorris.io/jokes/random');
     if (!response.ok) {
@@ -26,6 +25,7 @@ export async function handler(event: any, context: Context) {
       statusCode: 200,
       body: JSON.stringify({ msg: data.value })
     };
+  } /*
   } catch (err) {
     console.log(err); // output to netlify function log
     return {
