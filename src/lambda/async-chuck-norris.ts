@@ -2,9 +2,16 @@
 // https://github.com/netlify/netlify-lambda/issues/43#issuecomment-444618311
 
 /*
-Testing W/O Node Fetch
+Testing W/O Node Fetch:
+* Deploy works without this code
+* The other ts file compiles
+* It pulls in AWS Lambda types
+* So my theory is that node-fetch has an issue
+* For some reason it's not being pulled in by @netlify/plugin-functions-core
+*/
 
 import fetch from 'node-fetch';
+/*
 import { Context } from 'aws-lambda';
 export async function handler(event: any, context: Context) {
   try {
